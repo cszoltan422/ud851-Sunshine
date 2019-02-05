@@ -22,7 +22,7 @@
     android:layout_height="match_parent">
 
     <!--Wrap the TextView in a ScrollView - DONE-->
-    <!--TODO (9) Set the ScrollView width to match_parent and the height to wrap_content-->
+    <!--Set the ScrollView width to match_parent and the height to wrap_content - DONE-->
 
     <!--Change the TextView's android:id attribute to tv_weather_data - DONE-->
     <!--Give the TextView 16dp of padding - DONE-->
@@ -30,7 +30,7 @@
     <!--Remove all attributes with the word constraint in them - DONE-->
     <!--Remove the default text from the TextView - DONE-->
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/tv_weather_data"
