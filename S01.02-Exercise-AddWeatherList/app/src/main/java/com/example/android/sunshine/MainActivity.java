@@ -42,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
         fakeWeatherDataList.add("Fake Data #2");
         fakeWeatherDataList.add("Fake Data #3");
 
-        // TODO (4) Append each String from the fake weather data array to the TextView
+        // Append each String from the fake weather data array to the TextView - DONE
+        for (String fakeWeatherData: fakeWeatherDataList) {
+            weatherTextView.append(String.format("%s\n", fakeWeatherData));
+        }
     }
 }
