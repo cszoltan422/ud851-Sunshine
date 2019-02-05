@@ -28,7 +28,7 @@
     <!--Change the TextView's android:id attribute to tv_weather_data - DONE-->
     <!--Give the TextView 16dp of padding - DONE-->
     <!--Set the text size to 20sp - DONE-->
-    <!--TODO (5) Remove all attributes with the word constraint in them-->
+    <!--Remove all attributes with the word constraint in them - DONE-->
     <!--TODO (6) Remove the default text from the TextView-->
     <TextView
         android:id="@+id/tv_weather_data"
@@ -36,9 +36,5 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:textSize="20sp"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="@+id/activity_main"
-        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
-        app:layout_constraintRight_toRightOf="@+id/activity_main"
-        app:layout_constraintTop_toTopOf="@+id/activity_main" />
+        android:text="Hello World!" />
 </FrameLayout>
