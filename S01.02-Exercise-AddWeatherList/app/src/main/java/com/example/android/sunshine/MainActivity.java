@@ -17,7 +17,11 @@ package com.example.android.sunshine;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,7 +36,11 @@ public class MainActivity extends AppCompatActivity {
         // Use findViewById to get a reference to the weather display TextView - DONE
         weatherTextView = findViewById(R.id.tv_weather_data);
 
-        // TODO (3) Create an array of Strings that contain fake weather data
+        // Create an array of Strings that contain fake weather data - DONE
+        List<String> fakeWeatherDataList = new ArrayList<>();
+        fakeWeatherDataList.add("Fake Data #1");
+        fakeWeatherDataList.add("Fake Data #2");
+        fakeWeatherDataList.add("Fake Data #3");
 
         // TODO (4) Append each String from the fake weather data array to the TextView
     }
