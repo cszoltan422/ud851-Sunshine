@@ -120,7 +120,8 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String[] weatherData) {
-            // TODO (19) As soon as the data is finished loading, hide the loading indicator
+            // As soon as the data is finished loading, hide the loading indicator - DONE
+            progressBar.setVisibility(View.INVISIBLE);
 
             if (weatherData != null) {
                 // If the weather data was not null, make sure the data view is visible - DONE
