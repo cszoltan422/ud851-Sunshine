@@ -18,6 +18,9 @@ package com.example.android.sunshine;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -102,8 +105,15 @@ public class MainActivity extends AppCompatActivity {
     // Add one item to the menu with an ID of action_refresh - DONE
     // Set the title of the menu item to "Refresh" using strings.xml - DONE
 
-    // TODO (5) Override onCreateOptionsMenu to inflate the menu for this Activity
+    // Override onCreateOptionsMenu to inflate the menu for this Activity - DONE
     // TODO (6) Return true to display the menu
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.forecast, menu);
+    }
+
 
     // TODO (7) Override onOptionsItemSelected to handle clicks on the refresh button
 }
