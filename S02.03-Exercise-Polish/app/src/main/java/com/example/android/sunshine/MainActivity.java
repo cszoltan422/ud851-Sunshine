@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView mWeatherTextView;
 
-    // TODO (6) Add a TextView variable for the error message display
+    // Add a TextView variable for the error message display - DONE
+    private TextView errorTextView;
 
     // TODO (16) Add a ProgressBar variable to show and hide the progress bar
 
