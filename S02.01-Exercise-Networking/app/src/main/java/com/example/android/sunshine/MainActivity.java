@@ -20,6 +20,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import com.example.android.sunshine.utilities.NetworkUtils;
+
+import java.io.IOException;
 import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,9 +49,18 @@ public class MainActivity extends AppCompatActivity {
     // TODO (8) Create a method that will get the user's preferred location and execute your new AsyncTask and call it loadWeatherData
 
     // Create a class that extends AsyncTask to perform network requests - DONE
-    // TODO (6) Override the doInBackground method to perform your network requests
+    // Override the doInBackground method to perform your network requests - DONE
     // TODO (7) Override the onPostExecute method to display the results of the network request
     private class WeatherRequestAsyncTask extends AsyncTask<URL, Void, String> {
 
+        @Override
+        protected String doInBackground(URL... urls) {
+            URL url = urls[0];
+            try {
+                return NetworkUtils.getResponseFromHttpUrl(url);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
