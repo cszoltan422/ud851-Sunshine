@@ -106,12 +106,13 @@ public class MainActivity extends AppCompatActivity {
     // Set the title of the menu item to "Refresh" using strings.xml - DONE
 
     // Override onCreateOptionsMenu to inflate the menu for this Activity - DONE
-    // TODO (6) Return true to display the menu
+    // Return true to display the menu - DONE
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.forecast, menu);
+        return true;
     }
 
 
