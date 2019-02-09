@@ -116,5 +116,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    // TODO (7) Override onOptionsItemSelected to handle clicks on the refresh button
+    // Override onOptionsItemSelected to handle clicks on the refresh button - DONE
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int itemId = item.getItemId();
+        if (itemId == R.id.action_refresh) {
+            mWeatherTextView.setText("");
+            loadWeatherData();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
