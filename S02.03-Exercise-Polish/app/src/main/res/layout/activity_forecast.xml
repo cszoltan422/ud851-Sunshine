@@ -40,9 +40,12 @@
         android:text="@string/error_message"
         android:visibility="invisible" />
 
-    <!--TODO (12) Add a ProgressBar to show the user content is loading-->
+    <!--Add a ProgressBar to show the user content is loading - DONE-->
     <!--TODO (13) Make the width and height of the ProgressBar 42dp-->
     <!--TODO (14) Set the layout_gravity of the ProgressBar to center-->
     <!--TODO (15) Set the default visibility of the ProgressBar to invisible-->
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </FrameLayout>
