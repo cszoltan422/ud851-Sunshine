@@ -19,6 +19,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.android.sunshine.data.SunshinePreferences;
 import com.example.android.sunshine.utilities.NetworkUtils;
@@ -46,13 +47,19 @@ public class MainActivity extends AppCompatActivity {
         // Delete the dummy weather data. You will be getting REAL data from the Internet in this lesson. - DONE
 
         // Delete the for loop that populates the TextView with dummy data - DONE
-        // TODO (9) Call loadWeatherData to perform the network request to get the weather
+        // Call loadWeatherData to perform the network request to get the weather - DONE
+        loadWeatherData();
     }
 
     // Create a method that will get the user's preferred location and execute your new AsyncTask and call it loadWeatherData - DONE
-    private void loadWeatherData() throws MalformedURLException {
+    private void loadWeatherData() {
         String preferredWeatherLocation = SunshinePreferences.getPreferredWeatherLocation(this);
-        new WeatherRequestAsyncTask().execute(NetworkUtils.buildUrl(preferredWeatherLocation));
+        try {
+            new WeatherRequestAsyncTask().execute(NetworkUtils.buildUrl(preferredWeatherLocation));
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT);
+        }
     }
 
     // Create a class that extends AsyncTask to perform network requests - DONE
