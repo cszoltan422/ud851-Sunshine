@@ -31,7 +31,7 @@
     </ScrollView>
 
     <!--Add a TextView that you will show the user if there is an error loading content - DONE-->
-    <!--TODO (3) Make the width and the height wrap_content-->
+    <!--Make the width and the height wrap_content - DONE-->
     <!--TODO (4) Give the TextView a default error message stating that an error occurred (use strings.xml)-->
     <!--TODO (5) Set the default visibility of the TextView to invisible-->
     <TextView
