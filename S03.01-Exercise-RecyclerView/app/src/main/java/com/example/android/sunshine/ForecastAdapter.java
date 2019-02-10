@@ -4,13 +4,16 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapterViewHolder> {
 
     // Within ForecastAdapter.java /////////////////////////////////////////////////////////////////
     // Add a class file called ForecastAdapter - DONE
     // Extend RecyclerView.Adapter<ForecastAdapter.ForecastAdapterViewHolder> - DONE
 
-    // TODO (23) Create a private string array called mWeatherData
+    // Create a private string array called mWeatherData - DONE
+    private List<String> weatherData;
 
     // TODO (47) Create the default constructor (we will pass in parameters in a later lesson)
 
