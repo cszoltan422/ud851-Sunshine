@@ -15,7 +15,8 @@ public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.Foreca
     // Create a private string array called mWeatherData - DONE
     private List<String> weatherData;
 
-    // TODO (47) Create the default constructor (we will pass in parameters in a later lesson)
+    // Create the default constructor (we will pass in parameters in a later lesson) - DONE
+    public ForecastAdapter() {}
 
     // Create a class within ForecastAdapter called ForecastAdapterViewHolder - DONE
     // Extend RecyclerView.ViewHolder - DONE
