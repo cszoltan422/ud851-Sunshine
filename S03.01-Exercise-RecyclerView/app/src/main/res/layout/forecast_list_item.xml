@@ -10,13 +10,14 @@
     <!--Set the width of the LinearLayout to match_parent and the height to wrap_content - DONE-->
 
     <!--Add a TextView with an id @+id/tv_weather_data - DONE-->
-    <!--TODO (9) Set the text size to 22sp-->
+    <!--Set the text size to 22sp - DONE-->
     <!--TODO (10) Make the width and height wrap_content-->
     <!--TODO (11) Give the TextView 16dp of padding-->
     <TextView
         android:id="@+id/tv_weather_data"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="22sp"/>
 
     <!--TODO (12) Add a View to the layout with a width of match_parent and a height of 1dp-->
     <!--TODO (13) Set the background color to #dadada-->
