@@ -2,6 +2,7 @@ package com.example.android.sunshine;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -42,12 +43,13 @@ public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.Foreca
     }
 
     // Override onCreateViewHolder - DONE
-    // TODO (25) Within onCreateViewHolder, inflate the list item xml into a view
+    // Within onCreateViewHolder, inflate the list item xml into a view - DONE
     // TODO (26) Within onCreateViewHolder, return a new ForecastAdapterViewHolder with the above view passed in as a parameter
     @NonNull
     @Override
     public ForecastAdapterViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        return null;
+        LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
+        View view = inflater.inflate(R.layout.forecast_list_item, viewGroup, false);
     }
 
 
