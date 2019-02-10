@@ -44,12 +44,13 @@ public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.Foreca
 
     // Override onCreateViewHolder - DONE
     // Within onCreateViewHolder, inflate the list item xml into a view - DONE
-    // TODO (26) Within onCreateViewHolder, return a new ForecastAdapterViewHolder with the above view passed in as a parameter
+    // Within onCreateViewHolder, return a new ForecastAdapterViewHolder with the above view passed in as a parameter - DONE
     @NonNull
     @Override
     public ForecastAdapterViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
         View view = inflater.inflate(R.layout.forecast_list_item, viewGroup, false);
+        return new ForecastAdapterViewHolder(view);
     }
 
 
