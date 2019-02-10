@@ -39,9 +39,9 @@ public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.Foreca
         void onItemClick(String s);
     }
 
-    // TODO (4) Add a ForecastAdapterOnClickHandler as a parameter to the constructor and store it in mClickHandler
-    public ForecastAdapter() {
-
+    // Add a ForecastAdapterOnClickHandler as a parameter to the constructor and store it in mClickHandler - DONE
+    public ForecastAdapter(ForecastAdapterOnClickHandler clickHandler) {
+        this.clickHandler = clickHandler;
     }
 
     // TODO (5) Implement OnClickListener in the ForecastAdapterViewHolder class
