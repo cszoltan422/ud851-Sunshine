@@ -33,8 +33,7 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
-    // TODO (33) Delete mWeatherTextView
-    private TextView mWeatherTextView;
+    // Delete mWeatherTextView - DONE
 
     // TODO (34) Add a private RecyclerView variable called mRecyclerView
     // TODO (35) Add a private ForecastAdapter variable called mForecastAdapter
