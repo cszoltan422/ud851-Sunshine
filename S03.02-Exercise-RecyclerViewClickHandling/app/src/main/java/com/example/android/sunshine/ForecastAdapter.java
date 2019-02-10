@@ -33,8 +33,10 @@ public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.Foreca
     // TODO (3) Create a final private ForecastAdapterOnClickHandler called mClickHandler
 
     // Add an interface called ForecastAdapterOnClickHandler - DONE
-    // TODO (2) Within that interface, define a void method that access a String as a parameter
-    public interface ForecastAdapterOnClickHandler {}
+    // Within that interface, define a void method that access a String as a parameter - DONE
+    public interface ForecastAdapterOnClickHandler {
+        void onItemClick(String s);
+    }
 
     // TODO (4) Add a ForecastAdapterOnClickHandler as a parameter to the constructor and store it in mClickHandler
     public ForecastAdapter() {
