@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <!--Within forecast_list_item.xml //////////////////////////////////////////////////////////////-->
     <!--Add a layout for an item in the list called forecast_list_item.xml - DONE-->
-    <!--TODO (6) Make the root of the layout a vertical LinearLayout-->
+    <!--Make the root of the layout a vertical LinearLayout - DONE-->
     <!--TODO (7) Set the width of the LinearLayout to match_parent and the height to wrap_content-->
 
     <!--TODO (8) Add a TextView with an id @+id/tv_weather_data-->
