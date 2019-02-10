@@ -4,11 +4,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-public class ForecastAdapter {
+public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapterViewHolder> {
 
     // Within ForecastAdapter.java /////////////////////////////////////////////////////////////////
     // Add a class file called ForecastAdapter - DONE
-    // TODO (22) Extend RecyclerView.Adapter<ForecastAdapter.ForecastAdapterViewHolder>
+    // Extend RecyclerView.Adapter<ForecastAdapter.ForecastAdapterViewHolder> - DONE
 
     // TODO (23) Create a private string array called mWeatherData
 
