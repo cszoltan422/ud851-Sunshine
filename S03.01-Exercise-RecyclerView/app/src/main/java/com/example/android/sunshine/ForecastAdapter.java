@@ -1,7 +1,9 @@
 package com.example.android.sunshine;
 
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.List;
@@ -39,9 +41,15 @@ public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.Foreca
 
     }
 
-    // TODO (24) Override onCreateViewHolder
+    // Override onCreateViewHolder - DONE
     // TODO (25) Within onCreateViewHolder, inflate the list item xml into a view
     // TODO (26) Within onCreateViewHolder, return a new ForecastAdapterViewHolder with the above view passed in as a parameter
+    @NonNull
+    @Override
+    public ForecastAdapterViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        return null;
+    }
+
 
     // TODO (27) Override onBindViewHolder
     // TODO (28) Set the text of the TextView to the weather for this list item's position
