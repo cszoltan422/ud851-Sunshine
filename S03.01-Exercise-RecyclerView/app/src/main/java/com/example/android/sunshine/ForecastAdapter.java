@@ -1,6 +1,7 @@
 package com.example.android.sunshine;
 
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.TextView;
 
 public class ForecastAdapter {
@@ -22,9 +23,12 @@ public class ForecastAdapter {
         // Create a public final TextView variable called mWeatherTextView - DONE
         public final TextView weatherTextView;
 
-        // TODO (19) Create a constructor for this class that accepts a View as a parameter
+        // Create a constructor for this class that accepts a View as a parameter - DONE
         // TODO (20) Call super(view) within the constructor for ForecastAdapterViewHolder
         // TODO (21) Using view.findViewById, get a reference to this layout's TextView and save it to mWeatherTextView
+        public ForecastAdapterViewHolder(View view) {
+        }
+
         // Within ForecastAdapterViewHolder ///////////////////////////////////////////////////////////
 
     }
