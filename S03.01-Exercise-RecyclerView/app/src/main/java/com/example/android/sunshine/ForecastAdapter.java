@@ -25,9 +25,10 @@ public class ForecastAdapter {
 
         // Create a constructor for this class that accepts a View as a parameter - DONE
         // Call super(view) within the constructor for ForecastAdapterViewHolder - DONE
-        // TODO (21) Using view.findViewById, get a reference to this layout's TextView and save it to mWeatherTextView
+        // Using view.findViewById, get a reference to this layout's TextView and save it to mWeatherTextView - DONE
         public ForecastAdapterViewHolder(View view) {
             super(view);
+            weatherTextView = view.findViewById(R.id.tv_weather_data);
         }
 
         // Within ForecastAdapterViewHolder ///////////////////////////////////////////////////////////
