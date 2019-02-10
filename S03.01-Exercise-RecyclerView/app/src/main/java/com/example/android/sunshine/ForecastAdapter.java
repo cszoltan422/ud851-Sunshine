@@ -70,7 +70,10 @@ public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.Foreca
     }
 
 
-    // TODO (31) Create a setWeatherData method that saves the weatherData to mWeatherData
+    // Create a setWeatherData method that saves the weatherData to mWeatherData - DONE
     // TODO (32) After you save mWeatherData, call notifyDataSetChanged
+    public void setWeatherData(List<String> newData) {
+        this.weatherData = newData;
+    }
     // Within ForecastAdapter.java /////////////////////////////////////////////////////////////////
 }
