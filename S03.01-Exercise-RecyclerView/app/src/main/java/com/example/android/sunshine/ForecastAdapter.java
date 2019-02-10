@@ -24,7 +24,7 @@ public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.Foreca
     // Create a class within ForecastAdapter called ForecastAdapterViewHolder - DONE
     // Extend RecyclerView.ViewHolder - DONE
 
-    private class ForecastAdapterViewHolder extends RecyclerView.ViewHolder {
+    public class ForecastAdapterViewHolder extends RecyclerView.ViewHolder {
 
         // Within ForecastAdapterViewHolder ///////////////////////////////////////////////////////////
         // Create a public final TextView variable called mWeatherTextView - DONE
@@ -71,9 +71,10 @@ public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.Foreca
 
 
     // Create a setWeatherData method that saves the weatherData to mWeatherData - DONE
-    // TODO (32) After you save mWeatherData, call notifyDataSetChanged
+    // After you save mWeatherData, call notifyDataSetChanged - DONE
     public void setWeatherData(List<String> newData) {
         this.weatherData = newData;
+        notifyDataSetChanged();
     }
     // Within ForecastAdapter.java /////////////////////////////////////////////////////////////////
 }
