@@ -71,7 +71,8 @@ public class MainActivity extends AppCompatActivity {
         // set mForecastAdapter equal to a new ForecastAdapter - DONE
         forecastAdapter = new ForecastAdapter();
 
-        // TODO (42) Use mRecyclerView.setAdapter and pass in mForecastAdapter
+        // Use mRecyclerView.setAdapter and pass in mForecastAdapter - DONE
+        recyclerView.setAdapter(forecastAdapter);
 
         /*
          * The ProgressBar that will indicate to the user that we are loading data. It will be
