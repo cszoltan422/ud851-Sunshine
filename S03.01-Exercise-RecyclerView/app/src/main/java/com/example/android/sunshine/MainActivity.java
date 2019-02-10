@@ -65,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
         // Set the layoutManager on mRecyclerView - DONE
         recyclerView.setLayoutManager(layoutManager);
 
-        // TODO (40) Use setHasFixedSize(true) on mRecyclerView to designate that all items in the list will have the same size
+        // Use setHasFixedSize(true) on mRecyclerView to designate that all items in the list will have the same size - DONE
+        recyclerView.setHasFixedSize(true);
 
         // TODO (41) set mForecastAdapter equal to a new ForecastAdapter
 
