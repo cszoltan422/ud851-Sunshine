@@ -54,8 +54,13 @@ public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.Foreca
     }
 
 
-    // TODO (27) Override onBindViewHolder
+    // Override onBindViewHolder - DONE
     // TODO (28) Set the text of the TextView to the weather for this list item's position
+    @Override
+    public void onBindViewHolder(@NonNull ForecastAdapterViewHolder forecastAdapterViewHolder, int i) {
+
+    }
+
 
     // TODO (29) Override getItemCount
     // TODO (30) Return 0 if mWeatherData is null, or the size of mWeatherData if it is not null
