@@ -12,12 +12,13 @@
     <!--Add a TextView with an id @+id/tv_weather_data - DONE-->
     <!--Set the text size to 22sp - DONE-->
     <!--Make the width and height wrap_content - DONE-->
-    <!--TODO (11) Give the TextView 16dp of padding-->
+    <!--Give the TextView 16dp of padding - DONE-->
     <TextView
         android:id="@+id/tv_weather_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="22sp"/>
+        android:textSize="22sp"
+        android:padding="16dp" />
 
     <!--TODO (12) Add a View to the layout with a width of match_parent and a height of 1dp-->
     <!--TODO (13) Set the background color to #dadada-->
