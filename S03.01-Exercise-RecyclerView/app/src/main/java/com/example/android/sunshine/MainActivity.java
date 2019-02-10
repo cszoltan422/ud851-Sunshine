@@ -18,6 +18,7 @@ package com.example.android.sunshine;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -35,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
     // Delete mWeatherTextView - DONE
 
-    // TODO (34) Add a private RecyclerView variable called mRecyclerView
+    // Add a private RecyclerView variable called mRecyclerView - DONE
+    private RecyclerView recyclerView;
     // TODO (35) Add a private ForecastAdapter variable called mForecastAdapter
 
     private TextView mErrorMessageDisplay;
