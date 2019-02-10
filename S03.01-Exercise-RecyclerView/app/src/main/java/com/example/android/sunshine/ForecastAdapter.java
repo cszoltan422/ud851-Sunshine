@@ -1,5 +1,7 @@
 package com.example.android.sunshine;
 
+import android.support.v7.widget.RecyclerView;
+
 public class ForecastAdapter {
 
     // Within ForecastAdapter.java /////////////////////////////////////////////////////////////////
@@ -11,9 +13,9 @@ public class ForecastAdapter {
     // TODO (47) Create the default constructor (we will pass in parameters in a later lesson)
 
     // Create a class within ForecastAdapter called ForecastAdapterViewHolder - DONE
-    // TODO (17) Extend RecyclerView.ViewHolder
+    // Extend RecyclerView.ViewHolder - DONE
 
-    private class ForecastAdapterViewHolder {
+    private class ForecastAdapterViewHolder extends RecyclerView.ViewHolder {
 
         // Within ForecastAdapterViewHolder ///////////////////////////////////////////////////////////
         // TODO (18) Create a public final TextView variable called mWeatherTextView
