@@ -63,9 +63,10 @@ public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.Foreca
 
 
     // Override getItemCount - DONE
-    // TODO (30) Return 0 if mWeatherData is null, or the size of mWeatherData if it is not null
+    // Return 0 if mWeatherData is null, or the size of mWeatherData if it is not null - DONE
     @Override
     public int getItemCount() {
+        return weatherData == null ? 0 : weatherData.size();
     }
 
 
