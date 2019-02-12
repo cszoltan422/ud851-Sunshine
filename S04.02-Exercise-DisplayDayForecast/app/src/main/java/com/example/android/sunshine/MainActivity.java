@@ -38,6 +38,7 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity implements ForecastAdapterOnClickHandler {
 
+    public static final String DETAIL_ACTIVITY_WEATHER_FOR_DAY = "DETAIL_ACTIVITY_WEATHER_FOR_DAY";
     private RecyclerView mRecyclerView;
     private ForecastAdapter mForecastAdapter;
 
@@ -119,7 +120,8 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapterOn
         Context context = this;
         Class destinationClass = DetailActivity.class;
         Intent intentToStartDetailActivity = new Intent(context, destinationClass);
-        // TODO (1) Pass the weather to the DetailActivity
+        // Pass the weather to the DetailActivity - DONE
+        intentToStartDetailActivity.putExtra(DETAIL_ACTIVITY_WEATHER_FOR_DAY, weatherForDay);
         startActivity(intentToStartDetailActivity);
     }
 
