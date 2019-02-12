@@ -219,9 +219,22 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapterOn
             mForecastAdapter.setWeatherData(null);
             loadWeatherData();
             return true;
+        } else if (id == R.id.action_map) {
+            String location = "Szolnok";
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            Uri uri = new Uri.Builder()
+                    .scheme("geo")
+                    .path("0,0")
+                    .query(location)
+                    .build();
+            intent.setData(uri);
+
+            if (intent.resolveActivity(getPackageManager()) != null) {
+                startActivity(intent);
+            }
         }
 
-        // TODO (2) Launch the map when the map menu item is clicked
+        // Launch the map when the map menu item is clicked - DONE
 
         return super.onOptionsItemSelected(item);
     }
